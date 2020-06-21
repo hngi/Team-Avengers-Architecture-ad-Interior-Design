@@ -1,0 +1,114 @@
+/*-----Imports------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --primary-color: #E5E5E5; 
+    --light: #C4C4C4;
+    --dark: #0f2531;
+    --secondary-color: #E4AF26;
+    --black-color: #000000;
+    --color-white: #ffffff;
+}
+
+body {
+  color: var(--black-color);
+  font-family: 'Roboto' !important;
+}
+.heading-1 {
+  color: var(--black-color);
+  margin-top: 1rem;
+}
+
+.para-1 {
+  width: 70%;
+  margin: auto;
+}
+
+/*-----Common use classes-------*/
+.uppercase {
+  text-transform: uppercase;
+}
+.uppercase-bold {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+.navbar {
+    background: var(--dark);
+    color: var(--light) ;
+}
+.grey-dot {
+  height: 7px;
+  width: 7px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1.5px 7px 1.5px 1.5px;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--color-white);
+}
+.current-page {
+  color: #e4af26 !important;
+}
+
+.text-yellow {
+    color: var(--secondary-color);
+}
+
+.icons .fa {
+    cursor: pointer;
+    color: var(--dark);
+}
+.icons .fa:hover {
+    cursor: pointer;
+    color: var(--black-color);
+}
+
+/*------------Footer Section--------------*/
+#footer-section {
+    background-color: #0f2531;
+    color: white;
+    margin-top: 5%;
+    padding: 1.5rem 1rem;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+  .social-list {
+    padding-inline-start: 0;
+  }
+  .social-list li {
+    list-style: none;
+    display: inline;
+    padding: 10px 10px 10px 0;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    padding: 0;
+  }
+  #sitemap {
+    display: inline-block;
+  }
+
+@media (max-width: 994px) {
+    #footer-section {
+        padding: 1.5rem .2rem;
+      }
+    .para-1 {
+        width: 80%;
+    }
+
+    .middle {
+        margin: 10% 0;
+    }
+}    
